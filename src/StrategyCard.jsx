@@ -11,7 +11,7 @@ const StrategyCard = ({ strategy, stats, plotUrl, onDelete }) => {
   const handleDelete = () => {
     axios
       .delete(`${URL}/delete_strategy`, {
-        data: { strategy_name: strategy },
+        data: { strategy: strategy },
         headers: {
           'Content-Type': 'application/json',
         },

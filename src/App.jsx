@@ -9,6 +9,7 @@ import FormControl from '@mui/material/FormControl';
 import InputLabel from '@mui/material/InputLabel';
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
+import AddStrategyForm from './AddStrategyForm';
 
 const theme = createTheme({
   typography: {
@@ -143,6 +144,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <div className='flex flex-col gap-[100px] mt-[40px] px-[20px]'>
         <Typography variant='h3'>Доступные стратегии</Typography>
+        <AddStrategyForm></AddStrategyForm>
 
         <div className='flex flex-col gap-[60px] first:gap-[0px]'>
           <FormControl variant='outlined' sx={{ minWidth: 200 }}>
