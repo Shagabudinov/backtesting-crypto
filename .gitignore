@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual Environment
+venv/
+env/
+ENV/
+*.env
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Python egg info
+*.egg-info/
+.eggs/
+
+# Distribution / Packaging
+dist/
+build/
+*.egg
+*.whl
+
+# PyInstaller
+*.spec
+
+# coverage.py
+.coverage
+.coverage.*
+*.cover
+
+# pytest
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Sphinx documentation
+docs/_build/
+
+# VS Code
+.vscode/
+.vscode-test/
+
+# Other files
+*.log
+*.bak
+*.swp
