@@ -21,13 +21,6 @@ def run_backtest(params: Tuple[Any, ...], strategy_class: Any, data: pd.DataFram
     # Создаем словарь параметров
     params_dict = dict(zip(param_names, params))
 
-    print(params_dict)
-
-    param_grid = {
-            'short_window': range(5, 20, 5),
-            'long_window': range(20, 50, 5)
-        }
-
     # Создаем экземпляр стратегии, передаем и данные, и параметры
     strategy_instance = strategy_class
 

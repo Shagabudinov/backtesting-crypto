@@ -677,7 +677,7 @@ def delete_strategy(request: StrategyRequest):
     
     - **message**: Сообщение о статусе удаления стратегии.
     """
-    strategy_name = request.strategy_name
+    strategy_name = request.strategy
 
     logger.info(f"Запрос на удаление стратегии: {strategy_name}")
 
