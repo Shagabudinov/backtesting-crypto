@@ -1,0 +1,7 @@
+{
+    "upper_bound": 70,
+    "lower_bound": 30,
+    "rsi_window": 10,
+    "tp_coef": 1.09,
+    "sl_coef": 0.95
+}
