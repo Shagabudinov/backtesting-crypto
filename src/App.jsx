@@ -22,6 +22,7 @@ function App() {
   const [strategiesStats, setStrategiesStats] = useState({});
   const [plots, setPlots] = useState({});
   const [sortOption, setSortOption] = useState('newness_desc');
+  const [renderCount, setRenderCount] = useState(0);
 
   useEffect(() => {
     axios
@@ -30,7 +31,7 @@ function App() {
         setAvailableStrategies(response.data.available_strategies)
       )
       .catch((error) => console.log(error));
-  }, []);
+  }, [renderCount]);
 
   useEffect(() => {
     if (availableStrategies) {
@@ -144,7 +145,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <div className='flex flex-col gap-[100px] mt-[40px] px-[20px]'>
         <Typography variant='h3'>Доступные стратегии</Typography>
-        <AddStrategyForm></AddStrategyForm>
+        <AddStrategyForm setRenderCount={setRenderCount}></AddStrategyForm>
 
         <div className='flex flex-col gap-[60px] first:gap-[0px]'>
           <FormControl variant='outlined' sx={{ minWidth: 200 }}>
